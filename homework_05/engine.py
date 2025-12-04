@@ -9,5 +9,5 @@ class Engine:
     pistons: int
 
     def __init__(self, volume, pistons):
-        self.pistons = volume
+        self.pistons = pistons
         self.volume = volume

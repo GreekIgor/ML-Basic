@@ -25,6 +25,5 @@ class Vehicle(ABC):
             raise NotEnoughFuel(message= 'Не достаточно топлива для преодоления дистанции')
         self.fuel -= (distance * self.fuel_consumption)
         print(f"Растояние ${distance} осталость топливо ${self.fuel}")
-        pass
 
 

@@ -9,7 +9,7 @@ class Car(Vehicle):
     engine: Engine
 
     def setEngine(self,engine:Engine):
-        Car.engine = engine
+        self.engine = engine
 
 """audi = Car()
 engine = Engine(1, 0.8)

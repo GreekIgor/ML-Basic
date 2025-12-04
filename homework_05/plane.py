@@ -7,9 +7,10 @@ from base import Vehicle
 class Plane(Vehicle):
 
   def __init__(self,weight, started, fuel, fuel_consumption, max_cargo = 100):
-    super().__init__(weight, started, fuel, fuel_consumption)
     self.max_cargo  = max_cargo
     self.cargo = 0
+    super().__init__(weight, started, fuel, fuel_consumption)
+
 
   def load_cargo(self, load:int):
     if(load + self.cargo)>self.max_cargo:
